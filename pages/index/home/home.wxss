@@ -1,0 +1,221 @@
+.m-header .m-title image{
+  display: block;
+  width: 137px;
+  height: 45px;
+  margin: 0 auto;
+}
+.m-tabs {
+  position: relative;
+  background:#fff;
+}
+.m-tabs.fixed{
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  z-index: 999999;
+}
+.tabs {
+  margin:0 auto;
+  display:flex;
+  width: 130px !important;
+  height:42px;
+  line-height:42px;
+  box-sizing:border-box;
+  position:relative;
+  justify-content:space-around;
+  align-items:center;
+  -webkit-box-align:center;
+  background:#fff;
+}
+.tabs-tab {
+  flex:1;
+  display:flex;
+  width:100%;
+  -webkit-box-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  align-items:center;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  text-align:center;
+  position:relative;
+}
+.tabs-tab-title {
+  font-size:14px;
+  text-align:center;
+  box-sizing:border-box;
+  color:#80848f;
+}
+.tabs-tab-bar {
+  display: none;
+  width:100%;
+  height:2px;
+  background:0 0;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background:#2d8cf0;
+}
+.tabs-tab-current .tabs-tab-title {
+  color:#ffc3c3;
+}
+.tabs-tab-current .tabs-tab-bar{
+  display: block;
+  background: #ffc3c3;
+}
+.search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.m-content{
+  margin-top: 112px;
+}
+/* 推荐 */
+.panel2{
+  background: #fff;
+}
+.panel-swiper{
+  height: 100px;
+  margin-bottom: 10px;
+}
+.panel-swiper-image{
+  overflow: hidden;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scroll-view-x { 
+  width: 100%; 
+  height: 70px; 
+  display: flex; 
+  overflow: auto; 
+} 
+.scroll-x-item { 
+  position: relative;
+  width: 130px; 
+  height: 100%;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background: #ffc3c3;
+  color: #000;
+  padding: 10px;
+  display: inline-table; 
+}
+.ranking-list{
+  background: linear-gradient(left,#fae7ac,#fee566);
+  background: -moz-linear-gradient(left,#fae7ac,#fee566);
+  background: -o-linear-gradient(left,#fae7ac,#fee566);
+  background: -webkit-linear-gradient(left,#fae7ac,#fee566);
+  background: -ms-linear-gradient(left,#fae7ac,#fee566);
+}
+.discuss{
+  background: linear-gradient(left,#dee4fe,#bfc4fb);
+  background: -moz-linear-gradient(left,#dee4fe,#bfc4fb);
+  background: -o-linear-gradient(left,#dee4fe,#bfc4fb);
+  background: -webkit-linear-gradient(left,#dee4fe,#bfc4fb);
+  background: -ms-linear-gradient(left,#dee4fe,#bfc4fb);
+}
+.diary{
+  background: linear-gradient(left,#c6f9d0,#8dff9c);
+  background: -moz-linear-gradient(left,#c6f9d0,#8dff9c);
+  background: -o-linear-gradient(left,#c6f9d0,#8dff9c);
+  background: -webkit-linear-gradient(left,#c6f9d0,#8dff9c);
+  background: -ms-linear-gradient(left,#c6f9d0,#8dff9c);
+}
+.animation{
+  background: linear-gradient(left,#d5f3fe,#9aeef0);
+  background: -moz-linear-gradient(left,#d5f3fe,#9aeef0);
+  background: -o-linear-gradient(left,#d5f3fe,#9aeef0);
+  background: -webkit-linear-gradient(left,#d5f3fe,#9aeef0);
+  background: -ms-linear-gradient(left,#d5f3fe,#9aeef0);
+}
+.scroll-x-item .title{
+  font-size: 14px;
+}
+.scroll-x-item .desc{
+  font-size: 12px;
+  color: #999;
+  display: inline-block;
+}
+.scroll-x-item .desc.border{
+  border-radius: 3px;
+  padding: 0 5px;
+  border: 1px solid #999;
+}
+.scroll-x-item .ranking-list-view{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #bdac14;
+}
+.scroll-x-item .ranking-list-view .icon-crown{
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  width: 20px;
+  height: 17px;
+  z-index: 2;
+  margin-left: -10px;
+}
+.ranking-list-swiper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  z-index: 3;
+  background: #fee566;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ranking-list-swiper .ranking-list-swiper-image {
+  overflow:hidden;
+  border-radius:50%;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.scroll-x-item .image{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
+.cell-avatar-list .i-cell-desc{
+  height: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cell-avatar{
+  width: 100px !important;
+  height: 60px !important;
+  border-radius: 0 !important;
+}
+
+
+
+
+
+
+

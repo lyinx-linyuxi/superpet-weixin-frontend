@@ -1,0 +1,311 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class="m-title">
+      <image src="./images/logo2.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="m-tabs fixed">
+  <view class="tabs">
+    <view class="tabs-tab {{tabCurrent=='tab1'?'tabs-tab-current':''}}" data-index='tab1' bindtap="tabItemEvt">
+      <view class="i-badge">
+        <view class="tabs-tab-title">关注</view>
+        <view class="tabs-tab-bar"></view>
+      </view>
+    </view>
+    <view class="tabs-tab {{tabCurrent=='tab2'?'tabs-tab-current':''}}" data-index='tab2' bindtap="tabItemEvt">
+      <view class="badge">
+        <view class="tabs-tab-title">推荐</view>
+        <view class="tabs-tab-bar"></view>
+      </view>
+    </view>
+    <view class="tabs-tab {{tabCurrent=='tab3'?'tabs-tab-current':''}}" data-index='tab3' bindtap="tabItemEvt">
+      <view class="badge">
+        <view class="tabs-tab-title">科普</view>
+        
+      </view>
+    </view>
+  </view>
+  <view class='search' bindtap='searchEvt'>
+    <i-icon type="search" size="24" color="#000000" />
+  </view>
+</view>
+
+<view class='m-content'>
+  <view class="tab-content">
+
+    <view class="item" wx:if="{{tabCurrent=='tab1'}}">
+      <view class="list">
+        <view class="card-item">
+          <view class="i-cell i-cell-last">
+            <view class="i-cell-icon">
+              <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+            </view>
+            <view class="i-cell-bd">
+              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-desc">11个月24天</view>
+            </view>
+            <view class="i-cell-ft">
+              <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
+            </view>
+          </view>
+          <view class="media">
+            <view wx:if="{{true}}" class="media-images">
+              <image class="media-images-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+              <view class="media-images-text">
+                <i-icon type="picture" size="20" color="#fff"></i-icon>
+                <text>4</text>
+              </view>
+            </view>
+            <view wx:else class="media-video">
+              <image class="media-video-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg" bindtap="myVideoPlayEvt" data-videourl="http://www.w3school.com.cn/i/movie.ogg"></image>
+              <view class="media-video-paly">
+                <i-icon type="play_fill" size="28" color="#fff"></i-icon>
+              </view>
+            </view>
+          </view>
+          <view class='content'>
+            <text>解决了少时多餐、南方天气潮、加班回太晚等一系列问题</text>
+          </view>
+          <view class="btn-group">
+            <view class="btn">
+              <i-icon i-class="icon" type="like" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="message" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="send" size="22" color="#b1b1b1">3s</i-icon>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+         <view class="card-item">
+          <view class="i-cell i-cell-last">
+            <view class="i-cell-icon">
+              <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+            </view>
+            <view class="i-cell-bd">
+              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-desc">11个月24天</view>
+            </view>
+            <view class="i-cell-ft">
+                <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
+            </view>
+          </view>
+          <view class="media">
+            <view wx:if="{{false}}" class="media-images">
+              <image class="media-images-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+              <view class="media-images-text">
+                <i-icon type="picture" size="20" color="#fff"></i-icon>
+                <text>4</text>
+              </view>
+            </view>
+            <view wx:else class="media-video">
+              <image class="media-video-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg" bindtap="myVideoPlayEvt" data-videourl="http://www.w3school.com.cn/i/movie.ogg"></image>
+              <view class="media-video-paly">
+                <i-icon type="play_fill" size="28" color="#fff"></i-icon>
+              </view>
+            </view>
+          </view>
+          <view class='content'>
+            <text>解决了少时多餐、南方天气潮、加班回太晚等一系列问题</text>
+          </view>
+          <view class="btn-group">
+            <view class="btn">
+              <i-icon i-class="icon" type="like" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="message" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="send" size="22" color="#b1b1b1">3s</i-icon>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="item" wx:elif="{{tabCurrent=='tab2'}}">
+      <view class="mb10 p10 panel2">
+        <swiper class="panel-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+          <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+            <swiper-item>
+              <image src="{{item}}" class="panel-swiper-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <scroll-view scroll-x class="scroll-view-x" style="width:100%"> 
+          <view class="scroll-view-x"> 
+            <view class="scroll-x-item ranking-list">
+              <view class="title">今日猫榜</view>
+              <view class="desc">人气TOP50</view>
+              <view class="ranking-list-view">
+                <swiper class="ranking-list-swiper" autoplay="true" interval="5000" duration="1000">
+                  <block wx:for="{{userUrls}}" wx:key="{{item}}">
+                    <swiper-item>
+                      <image src="{{item}}" class="ranking-list-swiper-image"/>
+                    </swiper-item>
+                  </block>
+                </swiper>
+                <image class="icon-crown" src="./images/icon-crown.png"></image>
+              </view>
+            </view>
+            <view class="scroll-x-item discuss">
+              <view class="title">话题讨论</view>
+              <view class="desc border">养宠话题</view>
+              <image class="image" src="./images/discuss.png"></image>
+            </view>
+            <view class="scroll-x-item diary">
+              <view class="title">猫生传记</view>
+              <view class="desc border">长图文</view>
+              <image class="image" src="./images/diary.png"></image>
+            </view>
+            <view class="scroll-x-item animation">
+              <view class="title">动画专区</view>
+              <view class="desc border">Gif</view>
+              <image class="image" src="./images/animation.png"></image>
+            </view>
+          </view> 
+        </scroll-view> 
+      </view>
+      <view class="list">
+        <view class="card-item">
+          <view class="i-cell i-cell-last">
+            <view class="i-cell-icon">
+              <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+            </view>
+            <view class="i-cell-bd">
+              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-desc">11个月24天</view>
+            </view>
+            <view class="i-cell-ft">
+                <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
+            </view>
+          </view>
+          <view class="media">
+            <view wx:if="{{true}}" class="media-images">
+              <image class="media-images-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+              <view class="media-images-text">
+                <i-icon type="picture" size="20" color="#fff"></i-icon>
+                <text>4</text>
+              </view>
+            </view>
+            <view wx:else class="media-video">
+              <image class="media-video-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg" bindtap="myVideoPlayEvt"data-videourl="http://www.w3school.com.cn/i/movie.ogg"></image>
+              <view class="media-video-paly">
+                <i-icon type="play_fill" size="28" color="#fff"></i-icon>
+              </view>
+            </view>
+          </view>
+          <view class='content'>
+            <text>解决了少时多餐、南方天气潮、加班回太晚等一系列问题</text>
+          </view>
+          <view class="btn-group">
+            <view class="btn">
+              <i-icon i-class="icon" type="like" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="message" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="send" size="22" color="#b1b1b1">3s</i-icon>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+         <view class="card-item">
+          <view class="i-cell i-cell-last">
+            <view class="i-cell-icon">
+              <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
+            </view>
+            <view class="i-cell-bd">
+              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-desc">11个月24天</view>
+            </view>
+            <view class="i-cell-ft">
+                <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
+            </view>
+          </view>
+          <view class="media">
+            <view wx:if="{{false}}" class="media-images">
+              <image class="media-images-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+              <view class="media-images-text">
+                <i-icon type="picture" size="20" color="#fff"></i-icon>
+                <text>4</text>
+              </view>
+            </view>
+            <view wx:else class="media-video">
+              <image class="media-video-img" src="https://i.loli.net/2017/08/21/599a521472424.jpg" bindtap="myVideoPlayEvt" data-videourl="http://www.w3school.com.cn/i/movie.ogg"></image>
+              <view class="media-video-paly">
+                <i-icon type="play_fill" size="28" color="#fff"></i-icon>
+              </view>
+            </view>
+          </view>
+          <view class='content'>
+            <text>解决了少时多餐、南方天气潮、加班回太晚等一系列问题</text>
+          </view>
+          <view class="btn-group">
+            <view class="btn">
+              <i-icon i-class="icon" type="like" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="message" size="22" color="#b1b1b1"></i-icon>
+              <text>2</text>
+            </view>
+            <view class="btn">
+              <i-icon i-class="icon" type="send" size="22" color="#b1b1b1">3s</i-icon>
+              <text>2</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="item" wx:else>
+      <i-panel>
+        <view class="i-cell i-cell-last cell-avatar-list">
+          <view class="i-cell-icon">
+            <i-avatar size="large" shape="square" slot="icon" i-class="cell-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></i-avatar>
+          </view>
+          <view class="i-cell-bd">
+            <view class="i-cell-text">鱼油 真的只是为了给猫咪美容吗？</view>
+            <view class="i-cell-desc">我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中</view>
+          </view>
+        </view>
+        <view class="i-cell i-cell-last cell-avatar-list">
+          <view class="i-cell-icon">
+            <i-avatar size="large" shape="square" slot="icon" i-class="cell-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></i-avatar>
+          </view>
+          <view class="i-cell-bd">
+            <view class="i-cell-text">鱼油 真的只是为了给猫咪美容吗？</view>
+            <view class="i-cell-desc">我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中</view>
+          </view>
+        </view>
+        <view class="i-cell i-cell-last cell-avatar-list">
+          <view class="i-cell-icon">
+            <i-avatar size="large" shape="square" slot="icon" i-class="cell-avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></i-avatar>
+          </view>
+          <view class="i-cell-bd">
+            <view class="i-cell-text">鱼油 真的只是为了给猫咪美容吗？</view>
+            <view class="i-cell-desc">我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中，我们都听说过，给猫咪吃点鱼油能让其中</view>
+          </view>
+        </view>
+      </i-panel>
+    </view>
+
+  </view>
+
+</view>
+
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

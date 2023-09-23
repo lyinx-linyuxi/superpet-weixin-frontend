@@ -1,0 +1,57 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">爱宠资料</text>
+  </view>
+</view>
+
+<view class='m-content'>
+  <i-panel i-class="panel">
+    <i-avatar i-class="avatar" src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large" ></i-avatar>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">爱宠名：</view>
+      <input class="i-input-placeholder" placeholder="点击输入爱宠名"></input>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">性别：</view>
+      <i-tag checkable="{{true}}" color="yellow" checked="{{true}}" type="border" style="margin-right:5px;">男</i-tag>
+      <i-tag checkable="{{true}}" color="yellow" checked="{{true}}" type="border" style="margin-right:5px;">女</i-tag>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">体重：</view>
+      <input class="i-input-placeholder" placeholder="点击输入体重(kg)"></input>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">一句描述：</view>
+      <input class="i-input-placeholder" placeholder="爱吃啥，有啥特点..."></input>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">是否绝育：</view>
+      <i-tag checkable="{{true}}" color="yellow" checked="{{true}}" type="border" style="margin-right:5px;">已绝育</i-tag>
+      <i-tag checkable="{{true}}" color="yellow" checked="{{true}}" type="border" style="margin-right:5px;">未绝育</i-tag>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">出生日期：</view>
+      <picker mode="date" value="{{date}}" start="0-0-0" end="2017-09-01" bindchange="bindDateChange">
+        <input class="i-input-placeholder" disabled placeholder="点击设置日期"></input>
+      </picker>
+    </view>
+    <view class="i-cell i-input">
+      <view class="i-cell-hd i-input-title">到家日期：</view>
+      <picker mode="date" value="{{date}}" start="0-0-0" end="2017-09-01" bindchange="bindDateChange">
+        <input class="i-input-placeholder" disabled placeholder="点击设置日期"></input>
+      </picker>
+    </view>
+    <view class="btn-group">
+      <i-button i-class="btn-save" bind:click="handleClick" type="success" shape="circle" size="small">完成注册</i-button>
+    </view>
+    <view class="explain">
+      <text>注册即代表同意</text>
+      <navigator>宠爱用户协议</navigator>
+    </view>
+  </i-panel>
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

@@ -1,0 +1,56 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">搜索</text>
+  </view>
+</view>
+
+<view class="search__top">
+  <form class="search__form" bindsubmit="searchSubmit">
+    <input value="{{search.searchValue}}" placeholder="输入搜索内容或宠物卡" class="search__input" bindfocus="focusSearch" bindinput="searchActiveChangeinput" auto-focus="true" name="teamSearchKeyWords" />
+    <view class="search__icon search__active">
+      <i-icon type="search" size="18" color="#80848f"></i-icon>
+    </view>
+    <button wx:if="{{search.showClearBtn}}" catchtap="searchActiveChangeclear" form-type="reset" style="background:none;position:absolute;border:none;right:0;top:0;bottom:0;width:80rpx;">
+      <icon type="clear" size="16" color="#aaa" style="position:absolute;right:15rpx;top:10px;z-index:3;"></icon>
+    </button>
+  </form>
+</view>
+
+<view class='m-content'>
+  <view class="panel" wx:if="{{search.showClearBtn}}" catchtap="searchSubmit">
+    <view class="panel__bd">
+      <view class="media-box media-box_small-appmsg">
+        <view class="cells">
+          <view class="a cell cell_access">
+            <view class="cell__hd" style="background-color:#1AAD19;border-radius:7rpx;width:80rpx;height:80rpx;line-height:80rpx;text-align:center;">
+              <icon type="search" size="24" color="#fff" style="margin-top:20rpx;"></icon>
+            </view>
+            <view class="cell__bd cell_primary">
+              <view class="p" style="padding-left:20rpx;font-size:34rpx;"><text style="color:#000;">搜索:</text><text style="color:#1AAD19;margin-left:20rpx;">{{search.searchValue}}</text></view>
+            </view>
+            <text class="cell__ft"></text>
+          </view>
+        </view>
+      </view>
+    </view> 
+  </view>
+  <block wx:for="{{searchResult}}" wx:for-item="item" wx:key="id" >
+  <navigator url="info?teamId={{item.team_id}}">
+    <view class="person__top__wrapper">
+      <view class="person__top__avatar">
+        <image src="{{item.team_avator}}" />
+      </view>
+      <view class="person__top__userinfo">
+        <view class="h3 justify">{{item.team_name}}</view>
+        <view class="h4 justify">{{item.team_intr}}</view>
+      </view>
+    </view>
+  </navigator>
+  </block>
+</view>
+
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

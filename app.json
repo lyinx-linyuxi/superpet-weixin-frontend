@@ -1,0 +1,75 @@
+{
+  "pages":[
+    
+    "pages/index/home/home",
+    "pages/index/pet/pet",
+    "pages/index/news/news",
+    "pages/index/userinfo/userinfo",
+
+    "pages/common/video/video",
+    "pages/common/search/search",
+
+    "pages/userinfo/about/about",
+    "pages/userinfo/exchange/exchange",
+    "pages/userinfo/feeding/feeding",
+    "pages/userinfo/follow/follow",
+    "pages/userinfo/note/note",
+    "pages/userinfo/praise/praise",
+    "pages/userinfo/setup/setup",
+    "pages/userinfo/shop/shop",
+
+    "pages/news/praise/praise",
+    "pages/news/comment/comment",
+    "pages/news/follow/follow",
+    "pages/news/card/card",
+
+    "pages/pet/card/card",
+    "pages/pet/insert/insert"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宠爱",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#f9f9f9",
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh":false
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "color":"#000",
+    "selectedColor":"#000",
+    "borderStyle":"white",
+    "list": [
+      {
+        "iconPath":"assets/images/home.png",
+        "selectedIconPath":"assets/images/home-selected.png",
+        "pagePath": "pages/index/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "assets/images/pet.png",
+        "selectedIconPath": "assets/images/pet-selected.png",
+        "pagePath": "pages/index/pet/pet",
+        "text": "萌宠"
+      },
+      {
+        "iconPath": "assets/images/news.png",
+        "selectedIconPath": "assets/images/news-selected.png",
+        "pagePath": "pages/index/news/news",
+        "text": "消息"
+      },
+      {
+        "iconPath": "assets/images/userinfo.png",
+        "selectedIconPath": "assets/images/userinfo-selected.png",
+        "pagePath": "pages/index/userinfo/userinfo",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

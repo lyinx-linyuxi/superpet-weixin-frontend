@@ -1,0 +1,39 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title"></text>
+  </view>
+</view>
+<view class='m-content'>
+  <view class="userinfo">
+    <view class="i-cell i-cell-last">
+      <view class="i-cell-icon">
+        <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large" shape="square"></i-avatar>
+      </view>
+      <view class="i-cell-bd">
+        <view class="i-cell-text">
+          <text>朝歌</text>
+          <text>铲屎官</text>  
+        </view>
+        <view class="i-cell-desc">有2个宠物</view>
+      </view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{false}}">
+    <view class="item">1</view>
+  </view>
+  <view class="card-panel">
+    <view class="card-add" bindtap="addCard">
+      <view class="title">有宠，注册爱宠卡</view>
+      <view class="desc">记录爱宠的一生</view>
+      <view class="image">
+        <image src="./images/img-pet-card-add.png"></image>
+      </view>
+    </view>
+  </view>
+
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

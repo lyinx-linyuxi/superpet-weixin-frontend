@@ -1,0 +1,75 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">我赞过的</text>
+  </view>
+</view>
+
+<view class='m-content'>
+  
+<view class="mui-table-view mui-unfold">
+  <view class="mui-table-view-cell mui-collapse mui-media mui-media-icon">
+    <navigator>
+      <view class="mui-media-object mui-pull-left">
+        <image src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+      </view>
+      <view class="mui-media-body">
+        <view class="mui-table">
+          <view class="mui-table-cell mui-col-xs-6">
+            <view class="mui-ellipsis">四大猫生必备维生素盘点</view>
+            <view class="h5 mui-ellipsis">对猫咪而言，维生素A、B</view>
+            <view class="mui-h6 mui-ellipsis p">猫卡的文章</view>
+          </view>
+          <view class="mui-table-cell mui-col-xs-6 mui-text-right">
+            <view class="mui-h5">8月17日 12:25</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+<view class="mui-table-view-cell mui-collapse mui-media mui-media-icon">
+    <navigator>
+      <view class="mui-media-object mui-pull-left">
+        <image src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+      </view>
+      <view class="mui-media-body">
+        <view class="mui-table">
+          <view class="mui-table-cell mui-col-xs-6">
+            <view class="mui-ellipsis">四大猫生必备维生素盘点</view>
+            <view class="h5 mui-ellipsis">对猫咪而言，维生素A、B</view>
+            <view class="mui-h6 mui-ellipsis p">猫卡的文章</view>
+          </view>
+          <view class="mui-table-cell mui-col-xs-6 mui-text-right">
+            <view class="mui-h5">8月17日 12:25</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="mui-table-view-cell mui-collapse mui-media mui-media-icon">
+    <navigator>
+      <view class="mui-media-object mui-pull-left">
+        <image src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+      </view>
+      <view class="mui-media-body">
+        <view class="mui-table">
+          <view class="mui-table-cell mui-col-xs-6">
+            <view class="mui-ellipsis">四大猫生必备维生素盘点</view>
+            <view class="h5 mui-ellipsis">对猫咪而言，维生素A、B</view>
+            <view class="mui-h6 mui-ellipsis p">猫卡的文章</view>
+          </view>
+          <view class="mui-table-cell mui-col-xs-6 mui-text-right">
+            <view class="mui-h5">8月17日 12:25</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+</view>
+
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

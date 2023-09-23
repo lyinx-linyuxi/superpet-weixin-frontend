@@ -1,0 +1,14 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">猫卡</text>
+  </view>
+</view>
+
+<view class='m-content'>
+  
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

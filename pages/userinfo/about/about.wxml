@@ -1,0 +1,25 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">关于小伴</text>
+  </view>
+</view>
+
+<view class='m-content'>
+  <view class="about">
+    <view class='avatar'>
+      <image src="./images/logo3.png" class="avatar"></image>
+    </view>
+    <view class="title">小伴</view>
+    <view class="content">‘小伴’ 是一款为爱宠用户提供名片生成，专属相册宠物介绍，宠物科普等功能的小程序。</view>
+    <view class="content m40">我们希望每一只宠物都有自己专属的名片，保存每一只宠物的资料，同时也希望每一位主人能够科学的饲养，有责任心，陪它们度过完美的一生，相信有你们的支持，我们一定可以让人与动物的关系变得更美好。</view>
+    <view class="text">
+      <text>微信：jsh_2912257030</text>
+      <navigator>(点我复制)</navigator>
+    </view>
+  </view>
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

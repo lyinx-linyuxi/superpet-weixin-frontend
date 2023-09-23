@@ -1,0 +1,13 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap="actionBackEvt">
+      <i-icon type="return" size="20" color="#fff"></i-icon>
+    </view>
+    <text class="m-title"></text>
+  </view>
+</view>
+<view class='m-content'>
+  <video class="video" src="{{video.src}}" controls autoplay loop direction="90"></video>
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

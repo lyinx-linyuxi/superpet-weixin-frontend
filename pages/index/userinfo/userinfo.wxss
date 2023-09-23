@@ -1,0 +1,17 @@
+
+.grid{
+  background: #fff;
+  border-top: 0px none !important;
+}
+.grid-item{
+  border-bottom:0px none !important;
+}
+.i-cell-ft .tag{
+  font-size: 12px;
+  padding: 5px;
+  background: fff;
+  color: #999;
+  border-radius: 20px;
+  border: 1px solid #999;
+  text-anchor: middle;
+}

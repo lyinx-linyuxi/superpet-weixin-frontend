@@ -1,0 +1,47 @@
+.avatar{
+  margin: 10px auto;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 100% !important;
+  display: block !important;
+}
+.i-input-title {
+  color:#495060;
+  min-width:65px;
+  padding-right:10px;
+}
+.explain{
+  padding-bottom: 30px;
+  text-align: center;
+  overflow: hidden;
+  font-size: 12px;
+}
+.explain navigator{
+  color: #4395ff;
+  display: inline-block;
+}
+.i-input-input {
+  flex:1;
+  line-height:1.6;
+  padding:4px 0;
+  min-height:22px;
+  height:auto;
+  font-size:14px;
+}
+.i-input {
+  padding:7px 15px;
+  color:#495060;
+}
+.btn-group{
+  text-align: center;
+}
+.btn-save{
+  display: inline-block;
+  width: 120px;
+}
+.i-input-title{
+  min-width: 70px;
+}
+.i-cell::after{
+  height: 0;
+}

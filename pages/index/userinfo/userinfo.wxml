@@ -1,0 +1,76 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'></view>
+</view>
+<view class='m-content'>
+  <i-panel i-class="mb10">
+    <view class="i-cell i-cell-last">
+      <view class="i-cell-icon">
+        <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large" shape="square"></i-avatar>
+      </view>
+      <view class="i-cell-bd">
+        <view class="i-cell-text">{{globalData.userInfo.nickName}}</view>
+        <view class="i-cell-desc">有2张宠物卡</view>
+      </view>
+      <view class="i-cell-ft">
+        <button class="tag" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+          <i-icon type="mine" size="16" />
+          <text>更新头像</text>
+        </button>
+      </view>
+    </view>
+  </i-panel>
+  <i-grid i-class="grid mb10">
+      <i-row>
+          <i-grid-item i-class="grid-item">
+            <navigator url="/pages/userinfo/feeding/feeding">
+              <i-grid-icon>
+                <i-icon size="24" type="barrage" />
+              </i-grid-icon>
+              <i-grid-label>投食记录</i-grid-label>
+            </navigator>
+          </i-grid-item>
+          <i-grid-item i-class="grid-item">
+            <navigator url="/pages/userinfo/shop/shop">
+              <i-grid-icon>
+                <i-icon size="24" type="dynamic" />
+              </i-grid-icon>
+              <i-grid-label>罐头兑换</i-grid-label>
+            </navigator>
+          </i-grid-item>
+          <i-grid-item i-class="grid-item">
+            <navigator url="/pages/userinfo/note/note">
+              <i-grid-icon>
+                <i-icon size="24" type="live" />
+              </i-grid-icon>
+              <i-grid-label>宠贴贴</i-grid-label>
+            </navigator>
+          </i-grid-item>
+      </i-row>
+  </i-grid>
+  <i-panel i-class="mb10">
+    <i-cell-group>
+      <i-cell title="我的关注" is-link url="/pages/userinfo/follow/follow">
+        <i-icon size="24" type="collection" slot="icon" />
+      </i-cell>
+      <i-cell title="我赞过的" is-link url="/pages/userinfo/praise/praise">
+        <i-icon size="24" type="like" slot="icon" />
+      </i-cell>
+      <i-cell title="兑换记录" is-link url="/pages/userinfo/exchange/exchange">
+        <i-icon size="24" type="commodity" slot="icon" />
+      </i-cell>
+    </i-cell-group>
+  </i-panel>
+  <i-panel i-class="mb10">
+    <i-cell-group>
+      <i-cell title="关于宠爱" is-link url="/pages/userinfo/about/about">
+        <i-icon size="24" type="flag" slot="icon" />
+      </i-cell>
+      <i-cell title="设置" is-link url="/pages/userinfo/setup/setup">
+        <i-icon size="24" type="setup" slot="icon" />
+      </i-cell>
+    </i-cell-group>
+  </i-panel>
+</view>
+
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

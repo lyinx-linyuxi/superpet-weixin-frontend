@@ -1,0 +1,21 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='actionBackEvt'>
+      <i-icon type="return" size="20" color="#000"></i-icon>
+    </view>
+    <text class="m-title">设置</text>
+  </view>
+</view>
+
+<view class='m-content'>
+  
+  <i-panel class="cell-panel-demo" title="默认收货地址">
+    <i-cell title="收件人：朝歌 13260094140" label="北京市 北京市 大兴区 长子营镇佟庄村" is-link></i-cell>
+  </i-panel>
+  <i-panel class="cell-panel-demo" title="设置安全手机">
+    <i-cell title="绑定手机号" is-link></i-cell>
+  </i-panel>
+
+</view>
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

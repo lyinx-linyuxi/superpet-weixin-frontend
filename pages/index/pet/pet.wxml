@@ -1,0 +1,176 @@
+<view class="m-header">
+  <view class="h25"></view>
+  <view class='header h45'>
+    <view class='m-action-back' bindtap='toggleMore'>
+      <i-icon type="other" size="30" color="#000"></i-icon>
+    </view>
+    <view class="m-title">
+      <text bindtap="cardEvt">我的萌宠</text>
+      <i-icon type="unfold" size="12" color="#000" />
+    </view>
+  </view>
+</view>
+<view class='m-content'>
+  <i-drawer i-class="drawer" mode="left" visible="{{showLeft}}" bind:close="toggleMore">
+    <view class="drawer-container">
+        <text class="h1">更多</text>
+        <i-panel i-class="drawe-cell-panel">
+          <i-cell-group>
+            <i-cell title="编辑萌宠卡" is-link>
+              <i-icon type="brush" slot="icon" color="#999" />
+            </i-cell>
+            <i-cell title="换皮肤" is-link>
+              <i-icon type="flag" slot="icon" color="#999" />
+            </i-cell>
+            <i-cell title="猫基" is-link>
+              <i-icon type="like" slot="icon" color="#999" />
+            </i-cell>
+            <i-cell title="保存萌卡图" is-link>
+              <i-icon type="picture" slot="icon" color="#999" />
+            </i-cell>
+            <i-cell title="罐头兑换" is-link>
+              <i-icon type="shop_fill" slot="icon" color="#999" />
+            </i-cell>
+            <i-cell title="设置" is-link>
+              <i-icon type="setup" slot="icon" color="#999" />
+            </i-cell>
+          </i-cell-group>
+        </i-panel>
+    </view>
+  </i-drawer>
+  
+  <scroll-view scroll-y class="scroll-view" bindscrolltoupper="upper" bindscrolltolower="lower" upper-threshold="{{0}}" lower-threshold="{{0}}" scroll-with-animation="{{true}}">
+    <view class="home">    
+      <view class="home-panel">
+        <view class="home-panel-userinfo">
+          <view class="userinfo-left">
+            <view class="title">苗呆</view>
+            <view class="attribute">
+              <i-icon type="like" size="20" color="#80848f">已绝育</i-icon>
+              <text>4岁4个月</text>
+            </view>
+            <view class="list">
+              <view class="item">
+                <i-icon type="like" size="20" color="#80848f"></i-icon>
+                <text class="icon-item-name">体重1.5kg</text>
+              </view>
+              <view class="item">
+                <i-icon type="like" size="20" color="#80848f"></i-icon>
+                <text class="icon-item-name">想吃什么就吃什么</text>
+              </view>
+              <view class="item">
+                <i-icon type="like" size="20" color="#80848f"></i-icon>
+                <text class="icon-item-name">2014-3-24 白羊座</text>
+              </view>
+            </view>
+          </view>  
+          <view class="userinfo-right">
+            <image class="petImage" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
+            <text class="petNo">萌宠号：789813</text>
+          </view>
+        </view>
+        <view class="home-panel-progress">
+          <i-row>
+            <i-col span="20" i-class="content">
+              <i-progress percent="85" stroke-width="15" status="active" hide-info></i-progress>
+            </i-col>
+            <i-col span="4" i-class="btn-group">
+              <i-button bind:click="handleClick" type="info" shape="circle" size="small" inline i-class="btn">投食</i-button>
+            </i-col>
+          </i-row>
+        </view>
+      </view>
+      <view class="tabs">
+        <view class="tab-item">
+          <view class="num">0</view>
+          <text>写真</text>
+        </view>
+        <view class="tab-item">
+          <view class="num">3</view>
+          <text>传记</text>
+        </view>
+        <view class="tab-item">
+          <view class="num">2</view>
+          <text>健康</text>
+        </view>
+      </view>
+      <view class="i-steps">
+        <i-steps direction="vertical">
+          <i-step icon="brush" i-class="step" status="process">
+            <view slot="title" class="steps-title">
+              <text class="date">8月14日</text>
+              <text class="day">1天</text>
+            </view>
+            <view slot="content" class="steps-content">
+              <view class="item">
+                <view class="content-left">
+                  <view class="title">体内驱虫</view>
+                  <view class="content">体内驱虫</view>
+                </view>
+                <i-avatar size="large" shape="square" slot="icon" i-class="Anthelmintic avatar">
+                  <i-icon type="like" size="24" />
+                </i-avatar>
+              </view>
+            </view>
+          </i-step>
+          <i-step icon="collection" i-class="step" status="process">
+            <view slot="title" class="steps-title">
+              <text class="date">8月14日</text>
+              <text class="day">1天</text>
+            </view>
+            <view slot="content" class="steps-content">
+              <view class="item">
+                <view class="content-left">
+                  <view class="title">体重1.5千克</view>
+                  <view class="content">体内驱虫</view>
+                </view>
+                <i-avatar size="large" shape="square" slot="icon" i-class="weight avatar">
+                  <i-icon type="like" size="24" />
+                </i-avatar>
+              </view>
+            </view>
+          </i-step>
+          <i-step icon="collection" i-class="step" status="process">
+            <view slot="title" class="steps-title">
+              <text class="date">8月14日</text>
+              <text class="day">1天</text>
+            </view>
+            <view slot="content" class="steps-content">
+              <view class="item">
+                <view class="content-left">
+                  <view class="title">体重1.5千克</view>
+                  <view class="content">体内驱虫</view>
+                </view>
+                <i-avatar size="large" shape="square" slot="icon" i-class="weight avatar">
+                  <i-icon type="like" size="24" />
+                </i-avatar>
+              </view>
+            </view>
+          </i-step>
+          <i-step icon="collection" i-class="step" status="process">
+            <view slot="title" class="steps-title">
+              <text class="date">8月14日</text>
+              <text class="day">1天</text>
+            </view>
+            <view slot="content" class="steps-content">
+              <view class="item">
+                <view class="content-left">
+                  <view class="title">体重1.5千克</view>
+                  <view class="content">体内驱虫</view>
+                </view>
+                <i-avatar size="large" shape="square" slot="icon" i-class="weight avatar">
+                  <i-icon type="like" size="24" />
+                </i-avatar>
+              </view>
+            </view>
+          </i-step>
+        </i-steps>
+      </view>
+      <view class="clear"></view>
+    </view>
+    <i-load-more tip="暂无数据" loading="{{ false }}" />    
+  </scroll-view>
+  
+</view>
+
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

@@ -1,0 +1,12 @@
+.praise{
+  background: #ff6e6e !important;
+}
+.comment{
+  background: #62abff !important;
+}
+.follow{
+  background: #4fc782 !important;
+}
+.card{
+  background: #ffdc1d !important;
+}
