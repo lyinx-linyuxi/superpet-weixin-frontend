@@ -1,6 +1,7 @@
 {
   "pages":[
-    
+    "pages/login/login",
+    "pages/index/index",
     "pages/index/home/home",
     "pages/index/pet/pet",
     "pages/index/news/news",
@@ -71,5 +72,8 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "useExtendedLib":{
+    "weui": true
+  }
 }

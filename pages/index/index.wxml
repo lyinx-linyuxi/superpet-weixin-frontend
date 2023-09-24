@@ -1,0 +1,18 @@
+<!--个人信息页面-->
+ 
+<view data-weui-theme="{{theme}}">
+<!--用户头像-->
+<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+<image class="avatar" src="{{avatarUrl}}"></image>
+</button>
+ 
+<!--用户昵称-->
+<mp-form>
+<mp-cells>
+<mp-cell title="昵称">
+<input type="nickname" class="weui-input" placeholder="请输入昵称"
+bind:change="getNickName" value="{{nickName}}"/>
+</mp-cell>
+</mp-cells>
+</mp-form>
+</view>

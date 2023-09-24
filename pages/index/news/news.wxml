@@ -22,7 +22,7 @@
             <i-icon type="collection" size="24" />
           </i-avatar>
       </i-cell>
-      <i-cell title="宠物卡" label="来聊聊:是什么让你决定养猫的？" is-link url="/pages/news/card/card">
+      <i-cell title="宠物卡" label="来聊聊:是什么让你决定养宠物的？" is-link url="/pages/news/card/card">
           <i-avatar size="large" shape="square" slot="icon" i-class="card">
             <i-icon type="flag" size="24" />
           </i-avatar>

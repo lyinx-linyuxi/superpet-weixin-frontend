@@ -4,7 +4,7 @@
     <view class='m-action-back' bindtap='actionBackEvt'>
       <i-icon type="return" size="20" color="#000"></i-icon>
     </view>
-    <text class="m-title">猫卡</text>
+    <text class="m-title">宠物卡</text>
   </view>
 </view>
 

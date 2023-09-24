@@ -7,6 +7,7 @@
   </view>
 </view>
 
+<!--导航栏 包括“关注” “推荐” “科普” 和搜索-->
 <view class="m-tabs fixed">
   <view class="tabs">
     <view class="tabs-tab {{tabCurrent=='tab1'?'tabs-tab-current':''}}" data-index='tab1' bindtap="tabItemEvt">
@@ -17,22 +18,23 @@
     </view>
     <view class="tabs-tab {{tabCurrent=='tab2'?'tabs-tab-current':''}}" data-index='tab2' bindtap="tabItemEvt">
       <view class="badge">
-        <view class="tabs-tab-title">推荐</view>
+        <view class="tabs-tab-title">宠物圈</view>
         <view class="tabs-tab-bar"></view>
       </view>
     </view>
-    <view class="tabs-tab {{tabCurrent=='tab3'?'tabs-tab-current':''}}" data-index='tab3' bindtap="tabItemEvt">
+    <!--<view class="tabs-tab {{tabCurrent=='tab3'?'tabs-tab-current':''}}" data-index='tab3' bindtap="tabItemEvt">
       <view class="badge">
         <view class="tabs-tab-title">科普</view>
-        
+        <view class="tabs-tab-bar"></view>
       </view>
-    </view>
+    </view>-->
   </view>
-  <view class='search' bindtap='searchEvt'>
+  <!--<view class='search' bindtap='searchEvt'>
     <i-icon type="search" size="24" color="#000000" />
-  </view>
+  </view>-->
 </view>
 
+<!--设置“关注” “推荐” “科普”-->
 <view class='m-content'>
   <view class="tab-content">
 
@@ -44,7 +46,7 @@
               <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
             </view>
             <view class="i-cell-bd">
-              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-text">小西</view>
               <view class="i-cell-desc">11个月24天</view>
             </view>
             <view class="i-cell-ft">
@@ -90,7 +92,7 @@
               <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
             </view>
             <view class="i-cell-bd">
-              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-text">小西</view>
               <view class="i-cell-desc">11个月24天</view>
             </view>
             <view class="i-cell-ft">
@@ -134,7 +136,7 @@
     </view>
 
     <view class="item" wx:elif="{{tabCurrent=='tab2'}}">
-      <view class="mb10 p10 panel2">
+      <!--view class="mb10 p10 panel2">
         <swiper class="panel-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
           <block wx:for="{{imgUrls}}" wx:key="{{item}}">
             <swiper-item>
@@ -142,7 +144,7 @@
             </swiper-item>
           </block>
         </swiper>
-        <scroll-view scroll-x class="scroll-view-x" style="width:100%"> 
+        <!--<scroll-view scroll-x class="scroll-view-x" style="width:100%"> 
           <view class="scroll-view-x"> 
             <view class="scroll-x-item ranking-list">
               <view class="title">今日猫榜</view>
@@ -174,8 +176,8 @@
               <image class="image" src="./images/animation.png"></image>
             </view>
           </view> 
-        </scroll-view> 
-      </view>
+        </scroll-view>
+      </view-->
       <view class="list">
         <view class="card-item">
           <view class="i-cell i-cell-last">
@@ -183,12 +185,12 @@
               <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
             </view>
             <view class="i-cell-bd">
-              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-text">小西</view>
               <view class="i-cell-desc">11个月24天</view>
             </view>
-            <view class="i-cell-ft">
+            <!--<view class="i-cell-ft">
                 <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
-            </view>
+            </view>-->
           </view>
           <view class="media">
             <view wx:if="{{true}}" class="media-images">
@@ -229,12 +231,12 @@
               <i-avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" size="large"></i-avatar>
             </view>
             <view class="i-cell-bd">
-              <view class="i-cell-text">小朝歌</view>
+              <view class="i-cell-text">小西</view>
               <view class="i-cell-desc">11个月24天</view>
             </view>
-            <view class="i-cell-ft">
+            <!--<view class="i-cell-ft">
                 <i-tag class="i-tags" name="关注" color="yellow">关注</i-tag>
-            </view>
+            </view>-->
           </view>
           <view class="media">
             <view wx:if="{{false}}" class="media-images">
@@ -272,7 +274,7 @@
       </view>
     </view>
 
-    <view class="item" wx:else>
+    <!--<view class="item" wx:else>
       <i-panel>
         <view class="i-cell i-cell-last cell-avatar-list">
           <view class="i-cell-icon">
@@ -302,7 +304,7 @@
           </view>
         </view>
       </i-panel>
-    </view>
+    </view>-->
 
   </view>
 

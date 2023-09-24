@@ -20,7 +20,7 @@
       </view>
     </view>
   </i-panel>
-  <i-grid i-class="grid mb10">
+  <!--<i-grid i-class="grid mb10">
       <i-row>
           <i-grid-item i-class="grid-item">
             <navigator url="/pages/userinfo/feeding/feeding">
@@ -47,7 +47,7 @@
             </navigator>
           </i-grid-item>
       </i-row>
-  </i-grid>
+  </i-grid>-->
   <i-panel i-class="mb10">
     <i-cell-group>
       <i-cell title="我的关注" is-link url="/pages/userinfo/follow/follow">
@@ -56,19 +56,19 @@
       <i-cell title="我赞过的" is-link url="/pages/userinfo/praise/praise">
         <i-icon size="24" type="like" slot="icon" />
       </i-cell>
-      <i-cell title="兑换记录" is-link url="/pages/userinfo/exchange/exchange">
+      <!--<i-cell title="兑换记录" is-link url="/pages/userinfo/exchange/exchange">
         <i-icon size="24" type="commodity" slot="icon" />
-      </i-cell>
+      </i-cell>-->
     </i-cell-group>
   </i-panel>
   <i-panel i-class="mb10">
     <i-cell-group>
-      <i-cell title="关于宠爱" is-link url="/pages/userinfo/about/about">
+      <i-cell title="关于小伴" is-link url="/pages/userinfo/about/about">
         <i-icon size="24" type="flag" slot="icon" />
       </i-cell>
-      <i-cell title="设置" is-link url="/pages/userinfo/setup/setup">
+      <!--<i-cell title="设置" is-link url="/pages/userinfo/setup/setup">
         <i-icon size="24" type="setup" slot="icon" />
-      </i-cell>
+      </i-cell>-->
     </i-cell-group>
   </i-panel>
 </view>

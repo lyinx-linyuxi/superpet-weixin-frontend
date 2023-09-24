@@ -1,9 +1,5 @@
 {
   "description": "项目配置文件。",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
   "setting": {
     "urlCheck": true,
     "es6": true,
@@ -15,15 +11,23 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "coverView": false,
+    "enhance": false,
+    "showShadowRootInWxmlPanel": false,
+    "packNpmRelationList": [],
+    "ignoreUploadUnusedFiles": true
   },
   "compileType": "miniprogram",
-  "libVersion": "3.1.1",
-  "appid": "wx6c136c36188537c2",
-  "projectname": "wx-ichaoge-pet",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
+  },
+  "appid": "wx6c136c36188537c2",
+  "libVersion": "3.1.1",
+  "packOptions": {
+    "ignore": [],
+    "include": []
   }
 }

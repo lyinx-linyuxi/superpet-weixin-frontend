@@ -22,15 +22,15 @@
             <i-cell title="换皮肤" is-link>
               <i-icon type="flag" slot="icon" color="#999" />
             </i-cell>
-            <i-cell title="猫基" is-link>
+            <!--<i-cell title="猫基" is-link>
               <i-icon type="like" slot="icon" color="#999" />
-            </i-cell>
+            </i-cell>-->
             <i-cell title="保存萌卡图" is-link>
               <i-icon type="picture" slot="icon" color="#999" />
             </i-cell>
-            <i-cell title="罐头兑换" is-link>
+            <!--<i-cell title="罐头兑换" is-link>
               <i-icon type="shop_fill" slot="icon" color="#999" />
-            </i-cell>
+            </i-cell>-->
             <i-cell title="设置" is-link>
               <i-icon type="setup" slot="icon" color="#999" />
             </i-cell>
@@ -44,9 +44,9 @@
       <view class="home-panel">
         <view class="home-panel-userinfo">
           <view class="userinfo-left">
-            <view class="title">苗呆</view>
+            <view class="title">旺财</view>
             <view class="attribute">
-              <i-icon type="like" size="20" color="#80848f">已绝育</i-icon>
+              <i-icon type="like" size="20" color="#80848f"></i-icon>
               <text>4岁4个月</text>
             </view>
             <view class="list">
@@ -58,18 +58,18 @@
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
                 <text class="icon-item-name">想吃什么就吃什么</text>
               </view>
-              <view class="item">
+              <!--<view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
                 <text class="icon-item-name">2014-3-24 白羊座</text>
-              </view>
+              </view>-->
             </view>
           </view>  
           <view class="userinfo-right">
             <image class="petImage" src="https://i.loli.net/2017/08/21/599a521472424.jpg"></image>
-            <text class="petNo">萌宠号：789813</text>
+            <!--<text class="petNo">萌宠号：789813</text>-->
           </view>
         </view>
-        <view class="home-panel-progress">
+        <!--<view class="home-panel-progress">
           <i-row>
             <i-col span="20" i-class="content">
               <i-progress percent="85" stroke-width="15" status="active" hide-info></i-progress>
@@ -78,7 +78,7 @@
               <i-button bind:click="handleClick" type="info" shape="circle" size="small" inline i-class="btn">投食</i-button>
             </i-col>
           </i-row>
-        </view>
+        </view>-->
       </view>
       <view class="tabs">
         <view class="tab-item">
