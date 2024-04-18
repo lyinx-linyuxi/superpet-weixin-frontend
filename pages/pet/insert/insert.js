@@ -61,7 +61,7 @@ Page({
   },
 
   setSterilized(e) {
-    const sterilized = e.currentTarget.dataset.sterilized;
+    const sterilized = e.currentTarget.dataset.sterilized == '已绝育'?1 : 0;
     this.setData({
       sterilized: sterilized
     });
@@ -82,7 +82,7 @@ Page({
     const { petName, gender, weight, description, sterilized, birthDate, homeDate } = this.data;
     console.log('提交的信息:', this.data);  // 打印所有提交的信息到控制台
     wx.request({
-      url: 'http://localhost:8080',
+      url: 'http://localhost:8080/admin/petcard',
       method: 'POST',
       data: {
         petName,
@@ -100,8 +100,11 @@ Page({
             icon: 'success',
             duration: 2000
           });
-          wx.navigateBack()
-          wx.navigateBack()
+          wx.reLaunch({
+            url: '/pages/index/pet'
+          });
+          wx.navigateBack();
+          wx.navigateBack();
         }
       }
     });

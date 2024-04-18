@@ -15,8 +15,8 @@ Page({
   },
   onLoad(options) {
     wx.showNavigationBarLoading();
-    this.fetchPetData();
   },
+
   onReady() {
     setTimeout(() => {
       this.setData({
@@ -24,7 +24,11 @@ Page({
       });
     }, 2000);
   },
-  onShow() {},
+
+  onShow() {
+    console.log("Onshow diaoyong")
+    this.fetchPetData();
+  },
   onHide() {},
   onUnload() {},
   toggleMore() {
@@ -66,20 +70,20 @@ Page({
       });
       that.setDefaultData();  // 设置默认数据
       that.setData({spinShow: false});
-    }, 1000);  // 设置超时时间为10秒
-
+    }, 10000);  // 设置超时时间为10秒
     wx.request({
-      url: 'https://yourbackend.endpoint/petinfo',
+      url: 'http://localhost:8080/admin/petcard/query?timestamp=' + new Date().getTime(),
       method: 'GET',
       success(res) {
         clearTimeout(requestTimeout);  // 清除超时定时器
-        if (res.statusCode === 200 && res.data) {
-          let age = that.calculateAge(res.data.birthDate);
+        if (res.statusCode === 200 && res.data.data && res.data.data.petName && res.data.data.weight) {
+          const petInfo = res.data.data;
+          let age = that.calculateAge(petInfo.birthDate);
           that.setData({
-            name: res.data.petName,
+            name: petInfo.petName,
             age: age,
-            weight: res.data.weight,
-            description: res.data.description,
+            weight: petInfo.weight,
+            description: petInfo.description,
             spinShow: false
           });
         } else {
