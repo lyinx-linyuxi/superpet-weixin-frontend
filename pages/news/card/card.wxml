@@ -9,6 +9,34 @@
 </view>
 
 <view class='m-content'>
-  
+  <view class="home">
+    <block wx:for="{{pets}}" wx:key="*this">
+      <view class="home-panel">
+        <view class="home-panel-userinfo">
+          <view class="userinfo-left">
+            <view class="title">{{item.name}}</view>
+            <view class="attribute">
+              <i-icon type="like" size="20" color="#80848f"></i-icon>
+              <text>{{item.age}}</text>
+            </view>
+            <view class="list">
+              <view class="item">
+                <i-icon type="like" size="20" color="#80848f"></i-icon>
+                <text class="icon-item-name">体重{{item.weight}}</text>
+              </view>
+              <view class="item">
+                <i-icon type="like" size="20" color="#80848f"></i-icon>
+                <text class="icon-item-name">{{item.description}}</text>
+              </view>
+            </view>
+          </view>
+          <view class="userinfo-right">
+            <image class="petImage" src="{{item.imageUrl}}"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
 </view>
+
 <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

@@ -30,7 +30,7 @@
     </view>
     <view class="i-cell i-input">
       <view class="i-cell-hd i-input-title">是否绝育：</view>
-      <i-tag checkable="{{true}}" color="yellow" checked="{{sterilized === 1}}" type="border" style="margin-right:5px;" bind:tap="setSterilized" data-sterilized="已绝育">已绝育</i-tag>
+      <i-tag checkable="{{true}}" color="green" checked="{{sterilized === 1}}" type="border" style="margin-right:5px;" bind:tap="setSterilized" data-sterilized="已绝育">已绝育</i-tag>
       <i-tag checkable="{{true}}" color="yellow" checked="{{sterilized === 0}}" type="border" style="margin-right:5px;" bind:tap="setSterilized" data-sterilized="未绝育">未绝育</i-tag>
     </view>
     <view class="i-cell i-input">
