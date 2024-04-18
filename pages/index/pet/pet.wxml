@@ -44,19 +44,19 @@
       <view class="home-panel">
         <view class="home-panel-userinfo">
           <view class="userinfo-left">
-            <view class="title">{{data.name}}</view>
+            <view class="title">{{name}}</view>
             <view class="attribute">
               <i-icon type="like" size="20" color="#80848f"></i-icon>
-              <text>{{data.age}}</text>
+              <text>{{age}}</text>
             </view>
             <view class="list">
               <view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
-                <text class="icon-item-name">体重{{data.weight}}</text>
+                <text class="icon-item-name">体重{{weight}}</text>
               </view>
               <view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
-                <text class="icon-item-name">{{data.description}}</text>
+                <text class="icon-item-name">{{description}}</text>
               </view>
               <!--<view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
