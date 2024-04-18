@@ -3,10 +3,22 @@ Page({
   data: {
     showLeft: false,
     spinShow: true,
-    scrollTop:65
+    scrollTop:65,
+    name: '旺财',
+    age: '4岁4个月',
+    weight: '1.5kg',
+    description: '想吃什么就吃什么'
   },
   onLoad(options) {
     // 页面初始化 options为页面跳转所带来的参数
+    this.setData({
+      data: {
+        name: '旺财',
+        age: '4岁4个月',
+        weight: '1.5kg',
+        description: '想吃什么就吃什么'
+      }
+    });
     wx.showNavigationBarLoading()
   },
   onReady() {

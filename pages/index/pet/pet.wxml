@@ -44,19 +44,19 @@
       <view class="home-panel">
         <view class="home-panel-userinfo">
           <view class="userinfo-left">
-            <view class="title">旺财</view>
+            <view class="title">{{data.name}}</view>
             <view class="attribute">
               <i-icon type="like" size="20" color="#80848f"></i-icon>
-              <text>4岁4个月</text>
+              <text>{{data.age}}</text>
             </view>
             <view class="list">
               <view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
-                <text class="icon-item-name">体重1.5kg</text>
+                <text class="icon-item-name">体重{{data.weight}}</text>
               </view>
               <view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
-                <text class="icon-item-name">想吃什么就吃什么</text>
+                <text class="icon-item-name">{{data.description}}</text>
               </view>
               <!--<view class="item">
                 <i-icon type="like" size="20" color="#80848f"></i-icon>
